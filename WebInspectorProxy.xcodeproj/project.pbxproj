@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6790A64D1579F30F0023653B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790A64C1579F30F0023653B /* UIKit.framework */; };
+		6790A64F1579F30F0023653B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790A64E1579F30F0023653B /* Foundation.framework */; };
+		6790A6511579F30F0023653B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790A6501579F30F0023653B /* CoreGraphics.framework */; };
+		6790A6571579F30F0023653B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6790A6551579F30F0023653B /* InfoPlist.strings */; };
+		6790A6591579F30F0023653B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6790A6581579F30F0023653B /* main.m */; };
+		6790A65D1579F30F0023653B /* WIPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6790A65C1579F30F0023653B /* WIPAppDelegate.m */; };
+		6790A6601579F30F0023653B /* WIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6790A65F1579F30F0023653B /* WIPViewController.m */; };
+		6790A6631579F30F0023653B /* WIPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6790A6611579F30F0023653B /* WIPViewController_iPhone.xib */; };
+		6790A6661579F30F0023653B /* WIPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6790A6641579F30F0023653B /* WIPViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6790A6481579F30F0023653B /* WebInspectorProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebInspectorProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6790A64C1579F30F0023653B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6790A64E1579F30F0023653B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6790A6501579F30F0023653B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6790A6541579F30F0023653B /* WebInspectorProxy-Info.plist */ = {isa = PBXFileReference; path = "WebInspectorProxy-Info.plist"; sourceTree = "<group>"; };
+		6790A6561579F30F0023653B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6790A6581579F30F0023653B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6790A65A1579F30F0023653B /* WebInspectorProxy-Prefix.pch */ = {isa = PBXFileReference; path = "WebInspectorProxy-Prefix.pch"; sourceTree = "<group>"; };
+		6790A65B1579F30F0023653B /* WIPAppDelegate.h */ = {isa = PBXFileReference; path = WIPAppDelegate.h; sourceTree = "<group>"; };
+		6790A65C1579F30F0023653B /* WIPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIPAppDelegate.m; sourceTree = "<group>"; };
+		6790A65E1579F30F0023653B /* WIPViewController.h */ = {isa = PBXFileReference; path = WIPViewController.h; sourceTree = "<group>"; };
+		6790A65F1579F30F0023653B /* WIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIPViewController.m; sourceTree = "<group>"; };
+		6790A6621579F30F0023653B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WIPViewController_iPhone.xib; sourceTree = "<group>"; };
+		6790A6651579F30F0023653B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WIPViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6790A6451579F30F0023653B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6790A64D1579F30F0023653B /* UIKit.framework in Frameworks */,
+				6790A64F1579F30F0023653B /* Foundation.framework in Frameworks */,
+				6790A6511579F30F0023653B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6790A63D1579F30F0023653B = {
+			isa = PBXGroup;
+			children = (
+				6790A6521579F30F0023653B /* WebInspectorProxy */,
+				6790A64B1579F30F0023653B /* Frameworks */,
+				6790A6491579F30F0023653B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6790A6491579F30F0023653B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6790A6481579F30F0023653B /* WebInspectorProxy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6790A64B1579F30F0023653B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6790A64C1579F30F0023653B /* UIKit.framework */,
+				6790A64E1579F30F0023653B /* Foundation.framework */,
+				6790A6501579F30F0023653B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6790A6521579F30F0023653B /* WebInspectorProxy */ = {
+			isa = PBXGroup;
+			children = (
+				6790A65B1579F30F0023653B /* WIPAppDelegate.h */,
+				6790A65C1579F30F0023653B /* WIPAppDelegate.m */,
+				6790A65E1579F30F0023653B /* WIPViewController.h */,
+				6790A65F1579F30F0023653B /* WIPViewController.m */,
+				6790A6611579F30F0023653B /* WIPViewController_iPhone.xib */,
+				6790A6641579F30F0023653B /* WIPViewController_iPad.xib */,
+				6790A6531579F30F0023653B /* Supporting Files */,
+			);
+			path = WebInspectorProxy;
+			sourceTree = "<group>";
+		};
+		6790A6531579F30F0023653B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6790A6541579F30F0023653B /* WebInspectorProxy-Info.plist */,
+				6790A6551579F30F0023653B /* InfoPlist.strings */,
+				6790A6581579F30F0023653B /* main.m */,
+				6790A65A1579F30F0023653B /* WebInspectorProxy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6790A6471579F30F0023653B /* WebInspectorProxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6790A6691579F30F0023653B /* Build configuration list for PBXNativeTarget "WebInspectorProxy" */;
+			buildPhases = (
+				6790A6441579F30F0023653B /* Sources */,
+				6790A6451579F30F0023653B /* Frameworks */,
+				6790A6461579F30F0023653B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebInspectorProxy;
+			productName = WebInspectorProxy;
+			productReference = 6790A6481579F30F0023653B /* WebInspectorProxy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6790A63F1579F30F0023653B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WIP;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = asdasd;
+			};
+			buildConfigurationList = 6790A6421579F30F0023653B /* Build configuration list for PBXProject "WebInspectorProxy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6790A63D1579F30F0023653B;
+			productRefGroup = 6790A6491579F30F0023653B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6790A6471579F30F0023653B /* WebInspectorProxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6790A6461579F30F0023653B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6790A6571579F30F0023653B /* InfoPlist.strings in Resources */,
+				6790A6631579F30F0023653B /* WIPViewController_iPhone.xib in Resources */,
+				6790A6661579F30F0023653B /* WIPViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6790A6441579F30F0023653B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6790A6591579F30F0023653B /* main.m in Sources */,
+				6790A65D1579F30F0023653B /* WIPAppDelegate.m in Sources */,
+				6790A6601579F30F0023653B /* WIPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6790A6551579F30F0023653B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6790A6561579F30F0023653B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6790A6611579F30F0023653B /* WIPViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6790A6621579F30F0023653B /* en */,
+			);
+			name = WIPViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		6790A6641579F30F0023653B /* WIPViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6790A6651579F30F0023653B /* en */,
+			);
+			name = WIPViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6790A6671579F30F0023653B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6790A6681579F30F0023653B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6790A66A1579F30F0023653B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebInspectorProxy/WebInspectorProxy-Prefix.pch";
+				INFOPLIST_FILE = "WebInspectorProxy/WebInspectorProxy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6790A66B1579F30F0023653B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebInspectorProxy/WebInspectorProxy-Prefix.pch";
+				INFOPLIST_FILE = "WebInspectorProxy/WebInspectorProxy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6790A6421579F30F0023653B /* Build configuration list for PBXProject "WebInspectorProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6790A6671579F30F0023653B /* Debug */,
+				6790A6681579F30F0023653B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6790A6691579F30F0023653B /* Build configuration list for PBXNativeTarget "WebInspectorProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6790A66A1579F30F0023653B /* Debug */,
+				6790A66B1579F30F0023653B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6790A63F1579F30F0023653B /* Project object */;
+}
