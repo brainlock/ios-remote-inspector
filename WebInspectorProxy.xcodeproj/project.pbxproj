@@ -7,32 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673CF91A157DE47100AFC476 /* Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673CF919157DE47100AFC476 /* Storyboard_iPhone.storyboard */; };
+		673CF91E157DEA2000AFC476 /* WIPRecentSitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673CF91D157DEA2000AFC476 /* WIPRecentSitesViewController.m */; };
+		673CF921157DF84900AFC476 /* WIPBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673CF920157DF84900AFC476 /* WIPBrowserViewController.m */; };
+		67584A341579F3CF00FA88F5 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 67584A331579F3CF00FA88F5 /* GCDAsyncSocket.m */; };
+		67584A371579F3E300FA88F5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67584A361579F3E300FA88F5 /* Security.framework */; };
+		67584A391579F3E900FA88F5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67584A381579F3E900FA88F5 /* CFNetwork.framework */; };
+		67584A3F157ABBD400FA88F5 /* WIPTCPProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67584A3E157ABBD400FA88F5 /* WIPTCPProxy.m */; };
 		6790A64D1579F30F0023653B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790A64C1579F30F0023653B /* UIKit.framework */; };
 		6790A64F1579F30F0023653B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790A64E1579F30F0023653B /* Foundation.framework */; };
 		6790A6511579F30F0023653B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790A6501579F30F0023653B /* CoreGraphics.framework */; };
 		6790A6571579F30F0023653B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6790A6551579F30F0023653B /* InfoPlist.strings */; };
 		6790A6591579F30F0023653B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6790A6581579F30F0023653B /* main.m */; };
 		6790A65D1579F30F0023653B /* WIPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6790A65C1579F30F0023653B /* WIPAppDelegate.m */; };
-		6790A6601579F30F0023653B /* WIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6790A65F1579F30F0023653B /* WIPViewController.m */; };
-		6790A6631579F30F0023653B /* WIPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6790A6611579F30F0023653B /* WIPViewController_iPhone.xib */; };
-		6790A6661579F30F0023653B /* WIPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6790A6641579F30F0023653B /* WIPViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		673CF919157DE47100AFC476 /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
+		673CF91C157DEA2000AFC476 /* WIPRecentSitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIPRecentSitesViewController.h; sourceTree = "<group>"; };
+		673CF91D157DEA2000AFC476 /* WIPRecentSitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIPRecentSitesViewController.m; sourceTree = "<group>"; };
+		673CF91F157DF84900AFC476 /* WIPBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIPBrowserViewController.h; sourceTree = "<group>"; };
+		673CF920157DF84900AFC476 /* WIPBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIPBrowserViewController.m; sourceTree = "<group>"; };
+		67584A321579F3CF00FA88F5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		67584A331579F3CF00FA88F5 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		67584A361579F3E300FA88F5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		67584A381579F3E900FA88F5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		67584A3D157ABBD400FA88F5 /* WIPTCPProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIPTCPProxy.h; sourceTree = "<group>"; };
+		67584A3E157ABBD400FA88F5 /* WIPTCPProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIPTCPProxy.m; sourceTree = "<group>"; };
 		6790A6481579F30F0023653B /* WebInspectorProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebInspectorProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6790A64C1579F30F0023653B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6790A64E1579F30F0023653B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6790A6501579F30F0023653B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6790A6541579F30F0023653B /* WebInspectorProxy-Info.plist */ = {isa = PBXFileReference; path = "WebInspectorProxy-Info.plist"; sourceTree = "<group>"; };
+		6790A6541579F30F0023653B /* WebInspectorProxy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebInspectorProxy-Info.plist"; sourceTree = "<group>"; };
 		6790A6561579F30F0023653B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6790A6581579F30F0023653B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6790A65A1579F30F0023653B /* WebInspectorProxy-Prefix.pch */ = {isa = PBXFileReference; path = "WebInspectorProxy-Prefix.pch"; sourceTree = "<group>"; };
-		6790A65B1579F30F0023653B /* WIPAppDelegate.h */ = {isa = PBXFileReference; path = WIPAppDelegate.h; sourceTree = "<group>"; };
+		6790A65A1579F30F0023653B /* WebInspectorProxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebInspectorProxy-Prefix.pch"; sourceTree = "<group>"; };
+		6790A65B1579F30F0023653B /* WIPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIPAppDelegate.h; sourceTree = "<group>"; };
 		6790A65C1579F30F0023653B /* WIPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIPAppDelegate.m; sourceTree = "<group>"; };
-		6790A65E1579F30F0023653B /* WIPViewController.h */ = {isa = PBXFileReference; path = WIPViewController.h; sourceTree = "<group>"; };
-		6790A65F1579F30F0023653B /* WIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIPViewController.m; sourceTree = "<group>"; };
-		6790A6621579F30F0023653B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WIPViewController_iPhone.xib; sourceTree = "<group>"; };
-		6790A6651579F30F0023653B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WIPViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67584A391579F3E900FA88F5 /* CFNetwork.framework in Frameworks */,
+				67584A371579F3E300FA88F5 /* Security.framework in Frameworks */,
 				6790A64D1579F30F0023653B /* UIKit.framework in Frameworks */,
 				6790A64F1579F30F0023653B /* Foundation.framework in Frameworks */,
 				6790A6511579F30F0023653B /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +65,8 @@
 		6790A63D1579F30F0023653B = {
 			isa = PBXGroup;
 			children = (
+				67584A381579F3E900FA88F5 /* CFNetwork.framework */,
+				67584A361579F3E300FA88F5 /* Security.framework */,
 				6790A6521579F30F0023653B /* WebInspectorProxy */,
 				6790A64B1579F30F0023653B /* Frameworks */,
 				6790A6491579F30F0023653B /* Products */,
@@ -79,13 +94,18 @@
 		6790A6521579F30F0023653B /* WebInspectorProxy */ = {
 			isa = PBXGroup;
 			children = (
+				67584A321579F3CF00FA88F5 /* GCDAsyncSocket.h */,
+				67584A331579F3CF00FA88F5 /* GCDAsyncSocket.m */,
 				6790A65B1579F30F0023653B /* WIPAppDelegate.h */,
 				6790A65C1579F30F0023653B /* WIPAppDelegate.m */,
-				6790A65E1579F30F0023653B /* WIPViewController.h */,
-				6790A65F1579F30F0023653B /* WIPViewController.m */,
-				6790A6611579F30F0023653B /* WIPViewController_iPhone.xib */,
-				6790A6641579F30F0023653B /* WIPViewController_iPad.xib */,
 				6790A6531579F30F0023653B /* Supporting Files */,
+				67584A3D157ABBD400FA88F5 /* WIPTCPProxy.h */,
+				67584A3E157ABBD400FA88F5 /* WIPTCPProxy.m */,
+				673CF919157DE47100AFC476 /* Storyboard_iPhone.storyboard */,
+				673CF91C157DEA2000AFC476 /* WIPRecentSitesViewController.h */,
+				673CF91D157DEA2000AFC476 /* WIPRecentSitesViewController.m */,
+				673CF91F157DF84900AFC476 /* WIPBrowserViewController.h */,
+				673CF920157DF84900AFC476 /* WIPBrowserViewController.m */,
 			);
 			path = WebInspectorProxy;
 			sourceTree = "<group>";
@@ -154,8 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6790A6571579F30F0023653B /* InfoPlist.strings in Resources */,
-				6790A6631579F30F0023653B /* WIPViewController_iPhone.xib in Resources */,
-				6790A6661579F30F0023653B /* WIPViewController_iPad.xib in Resources */,
+				673CF91A157DE47100AFC476 /* Storyboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +187,10 @@
 			files = (
 				6790A6591579F30F0023653B /* main.m in Sources */,
 				6790A65D1579F30F0023653B /* WIPAppDelegate.m in Sources */,
-				6790A6601579F30F0023653B /* WIPViewController.m in Sources */,
+				67584A341579F3CF00FA88F5 /* GCDAsyncSocket.m in Sources */,
+				67584A3F157ABBD400FA88F5 /* WIPTCPProxy.m in Sources */,
+				673CF91E157DEA2000AFC476 /* WIPRecentSitesViewController.m in Sources */,
+				673CF921157DF84900AFC476 /* WIPBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,22 +203,6 @@
 				6790A6561579F30F0023653B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6790A6611579F30F0023653B /* WIPViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6790A6621579F30F0023653B /* en */,
-			);
-			name = WIPViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		6790A6641579F30F0023653B /* WIPViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6790A6651579F30F0023653B /* en */,
-			);
-			name = WIPViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -254,6 +260,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebInspectorProxy/WebInspectorProxy-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "WebInspectorProxy/WebInspectorProxy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -265,6 +272,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebInspectorProxy/WebInspectorProxy-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "WebInspectorProxy/WebInspectorProxy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -290,6 +298,7 @@
 				6790A66B1579F30F0023653B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
