@@ -19,8 +19,8 @@ to the internal web inspector, which wouldn't be accessible otherwise.
 - Alternatively, you may open the Safari Bonjour
   network browser, you will find the service advertised there as
   "Remote Webkit Inspector".
-- Shake your phone to get out of the WebView and back to the recent sites
-  list.
+- Shake your phone to access the toolbar: from there you can go back to the
+  recent sites list, or reload the page.
 
 ## HACKING
 

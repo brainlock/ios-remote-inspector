@@ -91,8 +91,20 @@
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
-        [self.navigationController popViewControllerAnimated:YES];
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+        double delayInSeconds = 2.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            if (!self.navigationController.isNavigationBarHidden) {
+                [self.navigationController setNavigationBarHidden:YES animated:YES];
+            }
+        });
     }
+}
+
+- (IBAction)refreshTapped:(id)sender {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.wview reload];
 }
 
 - (WIPTCPProxy*) proxy {

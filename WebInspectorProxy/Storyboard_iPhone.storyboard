@@ -89,7 +89,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9OB-k1-xmb"/>
+                    <navigationItem key="navigationItem" id="9OB-k1-xmb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="DpW-cV-I7D">
+                            <connections>
+                                <action selector="refreshTapped:" destination="H5j-ez-K1s" id="8XD-bi-Z35"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="567" y="89"/>
