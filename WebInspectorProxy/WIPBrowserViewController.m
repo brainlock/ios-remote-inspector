@@ -62,6 +62,7 @@
 - (UIWebView*) wview {
     if (!wview) {
         wview = [UIWebView new];
+        wview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         wview.delegate = self;
     }
     return wview;
