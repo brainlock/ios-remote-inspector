@@ -7,13 +7,16 @@
 
 #define PROXYTIMEOUT -1
 
-@interface WIPTCPProxy () {
+@interface WIPTCPProxy ()
+<NSNetServiceDelegate>
+{
     BOOL running;
 }
 
 @property (strong) NSMutableArray* waitingExternalSockets;
 @property (strong) NSMutableDictionary* socketMap;
 @property (strong) GCDAsyncSocket* externalSocket;
+@property (strong) NSNetService* netService;
 
 @end
 
@@ -23,6 +26,7 @@
 @synthesize socketMap;
 @synthesize externalSocket;
 @synthesize waitingExternalSockets;
+@synthesize netService;
 
 
 - (id) init {
@@ -34,6 +38,13 @@
         self.externalSocket = [[GCDAsyncSocket alloc]
                                initWithDelegate:self
                                   delegateQueue:dispatch_get_current_queue()];
+
+        self.netService = [[NSNetService alloc] initWithDomain:@"local."
+                                                          type:@"_http._tcp."
+                                                          name:@"Remote Webkit Inspector"
+                                                          port:EXTERNAL_PORT];
+        self.netService.delegate = self;
+
         running = NO;
     }
     return self;
@@ -43,6 +54,7 @@
     if (running) return;
     running = YES;
     [self listenOnExternal];
+    [self.netService publish];
     DebugLog(@"Started proxy.");
 }
 
@@ -65,6 +77,8 @@
     }
     self.socketMap = [NSMutableDictionary new];
     self.waitingExternalSockets = [NSMutableArray new];
+
+    [self.netService stop];
     DebugLog(@"Stopped proxy.");
 }
 
@@ -131,6 +145,17 @@
     GCDAsyncSocket* otherSocket = [self.socketMap objectForKey:[NSValue valueWithNonretainedObject:sock]];
     [otherSocket setDelegate:nil delegateQueue:NULL];
     [otherSocket disconnectAfterWriting];
+}
+
+#pragma mark - Netservice delegate
+
+- (void)netServiceDidPublish:(NSNetService*)sender {
+    DebugLog(@"Zeroconf name advertised.");
+}
+
+- (void)netService:(NSNetService*)sender didNotPublish:(NSDictionary*)errorDict {
+    DebugLog(@"Failed at advertising the service with Zeroconf. Error code: %d",
+        [errorDict valueForKey:NSNetServicesErrorCode]);
 }
 
 @end
